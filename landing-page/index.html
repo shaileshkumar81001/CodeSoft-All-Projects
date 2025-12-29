@@ -1,0 +1,521 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>NovaLaunch — Landing Page</title>
+    <meta
+      name="description"
+      content="A modern, responsive landing page built with HTML, CSS, and JavaScript."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css"/>
+  
+  </head>
+
+  <body>
+    <div class="spotlight" aria-hidden="true"></div>
+    <a class="skip" href="#main">Skip to content</a>
+
+    <header class="topbar" id="top">
+      <div class="wrap topbar-inner">
+        <a class="brand" href="#top" aria-label="NovaLaunch home">
+          <div class="logo" aria-hidden="true"></div>
+          <div class="brand-title">
+            <b>NovaLaunch</b>
+            <span>Launch your next idea</span>
+          </div>
+        </a>
+
+        <div class="nav" aria-label="Primary">
+          <nav class="nav-links" aria-label="Sections">
+            <a href="#features">Features</a>
+            <a href="#stats">Stats</a>
+            <a href="#testimonials">Reviews</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#faq">FAQ</a>
+          </nav>
+
+          <a class="btn btn-primary" href="#cta"><i class="fa-solid fa-rocket"></i> Get Started</a>
+          <button class="icon-btn menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="mobilePanel">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <div class="mobile-panel" id="mobilePanel" role="dialog" aria-label="Mobile menu">
+      <a href="#features">Features <i class="fa-solid fa-arrow-right"></i></a>
+      <a href="#stats">Stats <i class="fa-solid fa-arrow-right"></i></a>
+      <a href="#testimonials">Reviews <i class="fa-solid fa-arrow-right"></i></a>
+      <a href="#pricing">Pricing <i class="fa-solid fa-arrow-right"></i></a>
+      <a href="#faq">FAQ <i class="fa-solid fa-arrow-right"></i></a>
+      <a href="#cta">Get Started <i class="fa-solid fa-rocket"></i></a>
+    </div>
+
+    <main id="main">
+      <section class="hero">
+        <div class="blob one" aria-hidden="true"></div>
+        <div class="blob two" aria-hidden="true"></div>
+        <div class="blob three" aria-hidden="true"></div>
+
+        <div class="wrap hero-grid">
+          <div class="reveal">
+            <div class="kicker">
+              <span class="dot" aria-hidden="true"></span>
+              <span>Fast setup • Responsive • Animated UI</span>
+            </div>
+
+            <h1>
+              Build a landing page that
+              <span class="grad typing" id="typing"></span>
+            </h1>
+
+            <p>
+              A beginner-friendly landing page project (HTML + CSS + JavaScript) that teaches layouts, sections, spacing,
+              alignment, and modern UI effects—without overlapping elements.
+            </p>
+
+            <div class="hero-cta">
+              <a class="btn btn-primary" href="#pricing"><i class="fa-solid fa-bolt"></i> See Plans</a>
+              <a class="btn" href="#features"><i class="fa-regular fa-circle-play"></i> Explore Features</a>
+              <button class="btn" id="confettiBtn" type="button"><i class="fa-solid fa-wand-magic-sparkles"></i> Surprise</button>
+            </div>
+
+            <div class="trust">
+              <div class="avatars" aria-label="Social proof avatars">
+                <span class="avatar" aria-hidden="true"></span>
+                <span class="avatar" aria-hidden="true"></span>
+                <span class="avatar" aria-hidden="true"></span>
+              </div>
+              <span><b class="grad">1,200+</b> learners built this style of page</span>
+              <span>•</span>
+              <span>No frameworks required</span>
+            </div>
+          </div>
+
+          <aside class="card hero-card reveal" aria-label="Product preview">
+            <div class="mock">
+              <div class="mock-top">
+                <div class="dots" aria-hidden="true"><i></i><i></i><i></i></div>
+                <div class="spark" aria-hidden="true"><i class="fa-solid fa-sparkles"></i></div>
+              </div>
+
+              <div class="mock-body">
+                <div class="mini">
+                  <b>Performance</b>
+                  <small>Optimized spacing + responsive grid</small>
+                  <div class="bar"><div class="fill" style="--p: 92%"></div></div>
+                </div>
+                <div class="mini">
+                  <b>Design</b>
+                  <small>Gradients, glass cards, smooth transitions</small>
+                  <div class="bar"><div class="fill" style="--p: 88%"></div></div>
+                </div>
+                <div class="mini">
+                  <b>Animations</b>
+                  <small>Scroll reveal + counters + interactive effects</small>
+                  <div class="bar"><div class="fill" style="--p: 84%"></div></div>
+                </div>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="strip" aria-label="Technology marquee">
+        <div class="wrap">
+          <div class="marquee">
+            <div class="marquee-track">
+              <span class="pill"><i class="fa-brands fa-html5"></i> HTML Layout</span>
+              <span class="pill"><i class="fa-brands fa-css3-alt"></i> CSS Grid & Flex</span>
+              <span class="pill"><i class="fa-solid fa-wand-magic-sparkles"></i> Advanced Animations</span>
+              <span class="pill"><i class="fa-solid fa-mobile-screen"></i> Responsive Design</span>
+              <span class="pill"><i class="fa-solid fa-universal-access"></i> Accessibility</span>
+              <span class="pill"><i class="fa-solid fa-bolt"></i> Smooth UI</span>
+
+              <span class="pill"><i class="fa-brands fa-html5"></i> HTML Layout</span>
+              <span class="pill"><i class="fa-brands fa-css3-alt"></i> CSS Grid & Flex</span>
+              <span class="pill"><i class="fa-solid fa-wand-magic-sparkles"></i> Advanced Animations</span>
+              <span class="pill"><i class="fa-solid fa-mobile-screen"></i> Responsive Design</span>
+              <span class="pill"><i class="fa-solid fa-universal-access"></i> Accessibility</span>
+              <span class="pill"><i class="fa-solid fa-bolt"></i> Smooth UI</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="features">
+        <div class="wrap">
+          <h2>Features</h2>
+          <p class="lead">
+            A landing page is all about structure: sections, columns, spacing, and a consistent color palette. This template
+            includes a few “extra” modern touches too.
+          </p>
+
+          <div class="grid-3">
+            <article class="card feature reveal">
+              <div class="ic" aria-hidden="true"><i class="fa-solid fa-layer-group"></i></div>
+              <h3>Clean Sections</h3>
+              <p>Hero, features, stats, reviews, pricing, FAQ, CTA, and footer—easy to edit.</p>
+            </article>
+
+            <article class="card feature reveal">
+              <div class="ic" aria-hidden="true"><i class="fa-solid fa-grid-2"></i></div>
+              <h3>Grid + Flex Layout</h3>
+              <p>Responsive columns that collapse smoothly on mobile to avoid overlapping elements.</p>
+            </article>
+
+            <article class="card feature reveal">
+              <div class="ic" aria-hidden="true"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+              <h3>Advanced Animations</h3>
+              <p>Scroll reveal, animated gradients, counters, cursor spotlight, and micro-interactions.</p>
+            </article>
+
+            <article class="card feature reveal">
+              <div class="ic" aria-hidden="true"><i class="fa-solid fa-shield"></i></div>
+              <h3>Accessible</h3>
+              <p>Keyboard-friendly navigation, “skip to content”, and reduced-motion support.</p>
+            </article>
+
+            <article class="card feature reveal">
+              <div class="ic" aria-hidden="true"><i class="fa-solid fa-pen-ruler"></i></div>
+              <h3>Design System</h3>
+              <p>Reusable radius, borders, shadows, and gradient tokens to keep UI consistent.</p>
+            </article>
+
+            <article class="card feature reveal">
+              <div class="ic" aria-hidden="true"><i class="fa-solid fa-rocket"></i></div>
+              <h3>Easy to Extend</h3>
+              <p>Add your own content blocks (gallery, contact form, newsletter) anytime.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="stats">
+        <div class="wrap">
+          <h2>Stats</h2>
+          <p class="lead">These counters animate when they appear on screen (JavaScript + IntersectionObserver).</p>
+
+          <div class="card stats reveal">
+            <div class="stat-row">
+              <div class="stat">
+                <b><span class="count" data-to="98">0</span>%</b>
+                <small>Layout stability (no overlap)</small>
+              </div>
+              <div class="stat">
+                <b><span class="count" data-to="1200">0</span>+</b>
+                <small>Students helped</small>
+              </div>
+              <div class="stat">
+                <b><span class="count" data-to="15">0</span>min</b>
+                <small>To customize text & colors</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="testimonials">
+        <div class="wrap">
+          <h2>Reviews</h2>
+          <p class="lead">Use these cards as “testimonials” to make the page feel more real.</p>
+
+          <div class="grid-2 testimonials">
+            <article class="card quote reveal">
+              <p>
+                “The sections are super clean and responsive. I learned how to space elements properly and avoid messy
+                overlap.”
+              </p>
+              <footer>
+                <span>— Student A</span>
+                <span class="stars" aria-label="5 stars">★★★★★</span>
+              </footer>
+            </article>
+
+            <article class="card quote reveal">
+              <p>
+                “The animations make it feel premium. Scroll reveal + counters were my favorite parts to learn.”
+              </p>
+              <footer>
+                <span>— Student B</span>
+                <span class="stars" aria-label="5 stars">★★★★★</span>
+              </footer>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="pricing">
+        <div class="wrap">
+          <h2>Pricing</h2>
+          <p class="lead">A common landing-page section. Replace these with your own packages or services.</p>
+
+          <div class="pricing">
+            <article class="card plan reveal">
+              <h3>Starter</h3>
+              <p>Perfect for a simple personal landing page.</p>
+              <div class="price"><b>$0</b><span>/ forever</span></div>
+              <ul class="list">
+                <li><i class="fa-solid fa-check"></i> Responsive layout</li>
+                <li><i class="fa-solid fa-check"></i> Basic animations</li>
+                <li><i class="fa-solid fa-check"></i> Clean sections</li>
+              </ul>
+              <a class="btn" href="#cta"><i class="fa-solid fa-arrow-right"></i> Choose</a>
+            </article>
+
+            <article class="card plan featured reveal">
+              <div style="display: flex; justify-content: space-between; align-items: center; gap: 12px">
+                <h3 style="margin: 0">Pro</h3>
+                <span class="tag"><i class="fa-solid fa-crown"></i> Most Popular</span>
+              </div>
+              <p>Great for portfolios, creators, and startups.</p>
+              <div class="price"><b>$19</b><span>/ month</span></div>
+              <ul class="list">
+                <li><i class="fa-solid fa-check"></i> Scroll reveal</li>
+                <li><i class="fa-solid fa-check"></i> Animated counters</li>
+                <li><i class="fa-solid fa-check"></i> Pricing + FAQ sections</li>
+                <li><i class="fa-solid fa-check"></i> Smooth micro-interactions</li>
+              </ul>
+              <a class="btn btn-primary" href="#cta"><i class="fa-solid fa-rocket"></i> Choose Pro</a>
+            </article>
+
+            <article class="card plan reveal">
+              <h3>Team</h3>
+              <p>For small teams launching multiple pages.</p>
+              <div class="price"><b>$49</b><span>/ month</span></div>
+              <ul class="list">
+                <li><i class="fa-solid fa-check"></i> Everything in Pro</li>
+                <li><i class="fa-solid fa-check"></i> Extra sections</li>
+                <li><i class="fa-solid fa-check"></i> Priority support</li>
+              </ul>
+              <a class="btn" href="#cta"><i class="fa-solid fa-arrow-right"></i> Choose</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="faq">
+        <div class="wrap">
+          <h2>FAQ</h2>
+          <p class="lead">A simple FAQ using HTML details/summary (no JS required).</p>
+
+          <div class="reveal">
+            <details>
+              <summary>How do I change the colors? <i class="fa-solid fa-chevron-down"></i></summary>
+              <p>Edit the CSS variables inside <b>:root</b> (for example <b>--a</b>, <b>--b</b>, <b>--c</b>).</p>
+            </details>
+
+            <details>
+              <summary>How do I avoid overlapping elements? <i class="fa-solid fa-chevron-down"></i></summary>
+              <p>Use grid/flex layouts, set consistent gaps/padding, and test at multiple screen widths.</p>
+            </details>
+
+            <details>
+              <summary>Can I add more sections? <i class="fa-solid fa-chevron-down"></i></summary>
+              <p>Yes—copy an existing section block and update its content. Keep spacing consistent.</p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="cta">
+        <div class="wrap">
+          <div class="card cta-box reveal">
+            <div>
+              <h2 style="margin: 0 0 8px">Ready to launch?</h2>
+              <p>
+                Replace this content with your product/service. Add your email, phone, or link to a contact form.
+              </p>
+            </div>
+            <div class="cta-actions">
+              <a class="btn btn-primary" href="mailto:shaileshkumar7712@gmail.com"><i class="fa-solid fa-envelope"></i> Email Me</a>
+              <a class="btn" href="#top"><i class="fa-solid fa-arrow-up"></i> Back to Top</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="wrap footer-inner">
+          <div>© <span id="year">2025</span> NovaLaunch. All rights reserved.</div>
+          <div style="display: inline-flex; gap: 10px; align-items: center">
+            <a class="icon-btn" href="https://github.com/shaileshkumar810" aria-label="GitHub (replace link)"><i class="fa-brands fa-github"></i></a>
+            <a class="icon-btn" href="https://www.linkedin.com/in/shaileshkumar810/" aria-label="LinkedIn (replace link)"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <a class="to-top" id="toTop" href="#top" aria-label="Back to top"><span aria-hidden="true"></span></a>
+
+    <script>
+      const $ = (q, r = document) => r.querySelector(q);
+      const $$ = (q, r = document) => Array.from(r.querySelectorAll(q));
+
+      $("#year").textContent = new Date().getFullYear();
+
+      const menuBtn = $("#menuBtn");
+      const mobilePanel = $("#mobilePanel");
+
+      function setMenu(open) {
+        mobilePanel.classList.toggle("open", open);
+        menuBtn.setAttribute("aria-expanded", String(open));
+        menuBtn.innerHTML = open
+          ? '<i class="fa-solid fa-xmark"></i>'
+          : '<i class="fa-solid fa-bars"></i>';
+      }
+
+      menuBtn.addEventListener("click", () => {
+        const isOpen = mobilePanel.classList.contains("open");
+        setMenu(!isOpen);
+      });
+
+      mobilePanel.addEventListener("click", (e) => {
+        if (e.target.closest("a")) setMenu(false);
+      });
+
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") setMenu(false);
+      });
+
+      const typingEl = $("#typing");
+      const words = ["converts.", "looks premium.", "teaches you CSS."];
+      let wi = 0;
+      let ci = 0;
+      let deleting = false;
+
+      function tick() {
+        const w = words[wi];
+        if (!deleting) {
+          ci++;
+          typingEl.textContent = w.slice(0, ci);
+          if (ci >= w.length) {
+            deleting = true;
+            setTimeout(tick, 900);
+            return;
+          }
+        } else {
+          ci--;
+          typingEl.textContent = w.slice(0, ci);
+          if (ci <= 0) {
+            deleting = false;
+            wi = (wi + 1) % words.length;
+          }
+        }
+        setTimeout(tick, deleting ? 45 : 55);
+      }
+      tick();
+
+      const toTop = $("#toTop");
+      const onScroll = () => {
+        toTop.classList.toggle("show", window.scrollY > 500);
+      };
+      window.addEventListener("scroll", onScroll, { passive: true });
+      onScroll();
+
+      const io = new IntersectionObserver(
+        (entries) => {
+          for (const e of entries) {
+            if (e.isIntersecting) {
+              e.target.classList.add("on");
+              io.unobserve(e.target);
+            }
+          }
+        },
+        { threshold: 0.12 }
+      );
+      $$(".reveal").forEach((el) => io.observe(el));
+
+      function animateCount(el, to) {
+        const start = performance.now();
+        const from = 0;
+        const dur = 1100;
+
+        function frame(t) {
+          const p = Math.min(1, (t - start) / dur);
+          const eased = 1 - Math.pow(1 - p, 3);
+          const val = Math.round(from + (to - from) * eased);
+          el.textContent = val.toLocaleString();
+          if (p < 1) requestAnimationFrame(frame);
+        }
+
+        requestAnimationFrame(frame);
+      }
+
+      const countIO = new IntersectionObserver(
+        (entries) => {
+          for (const e of entries) {
+            if (!e.isIntersecting) continue;
+            const el = e.target;
+            const to = Number(el.getAttribute("data-to") || "0");
+            animateCount(el, to);
+            countIO.unobserve(el);
+          }
+        },
+        { threshold: 0.5 }
+      );
+      $$(".count").forEach((el) => countIO.observe(el));
+
+      const spotlight = $(".spotlight");
+      window.addEventListener(
+        "pointermove",
+        (e) => {
+          spotlight.style.setProperty("--sx", e.clientX + "px");
+          spotlight.style.setProperty("--sy", e.clientY + "px");
+        },
+        { passive: true }
+      );
+
+      $("#confettiBtn").addEventListener("click", () => {
+        const n = 24;
+        const colors = ["#7c3aed", "#22d3ee", "#34d399", "#fb7185", "#ffffff"];
+        for (let i = 0; i < n; i++) {
+          const p = document.createElement("span");
+          const size = 6 + Math.random() * 10;
+          const x = 18 + Math.random() * (window.innerWidth - 36);
+          const y = 120 + Math.random() * 80;
+
+          p.style.position = "fixed";
+          p.style.left = x + "px";
+          p.style.top = y + "px";
+          p.style.width = size + "px";
+          p.style.height = size + "px";
+          p.style.borderRadius = Math.random() > 0.5 ? "999px" : "6px";
+          p.style.background = colors[Math.floor(Math.random() * colors.length)];
+          p.style.boxShadow = "0 10px 30px rgba(0,0,0,0.35)";
+          p.style.zIndex = 9999;
+          p.style.pointerEvents = "none";
+
+          const dx = (Math.random() - 0.5) * 360;
+          const dy = 520 + Math.random() * 280;
+          const rot = (Math.random() - 0.5) * 520;
+          const dur = 900 + Math.random() * 550;
+
+          p.animate(
+            [
+              { transform: "translate3d(0,0,0) rotate(0deg)", opacity: 1 },
+              { transform: `translate3d(${dx}px, ${dy}px, 0) rotate(${rot}deg)`, opacity: 0 }
+            ],
+            { duration: dur, easing: "cubic-bezier(.2,.8,.2,1)" }
+          );
+
+          document.body.appendChild(p);
+          setTimeout(() => p.remove(), dur + 30);
+        }
+      });
+    </script>
+  </body>
+</html>
